@@ -1,0 +1,176 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio profesional de Emilio Suero: desarrollo web, redes y tecnología.">
+  <meta name="author" content="Emilio José Suero Castillo">
+  <title>Emilio Suero | Cyberpunk Portfolio</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="matrix" aria-hidden="true"></canvas>
+  <div class="matrix-overlay" aria-hidden="true"></div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#hero"><i class="bi bi-cpu"></i> EMILIO.DEV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Tecnologías</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#videos">Videos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item ms-lg-3 my-2 my-lg-0">
+            <button id="themeToggle" class="theme-btn" type="button" aria-label="Activar modo claro">
+              <i class="bi bi-sun-fill"></i>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <p class="eyebrow">&lt; BIENVENIDO A MI SISTEMA /&gt;</p>
+            <h1 class="hero-title">Emilio <span>Suero</span></h1>
+            <h2 class="hero-subtitle">Desarrollo Web | Redes | Tecnología</h2>
+            <p class="hero-text">Estudiante de Ingeniería en Sistemas, apasionado por las redes informáticas, el soporte técnico y el desarrollo de soluciones digitales modernas.</p>
+            <div class="hero-actions">
+              <a href="#projects" class="cyber-btn"><i class="bi bi-code-slash"></i> Ver proyectos</a>
+              <a href="#contact" class="cyber-btn"><i class="bi bi-envelope"></i> Contactarme</a>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <div class="profile-container">
+              <img class="profile-img" src="https://images.unsplash.com/photo-1531297484001-80022131f5a1?auto=format&fit=crop&w=600&q=80" alt="Imagen tecnológica de perfil">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">// SOBRE MÍ</h2>
+        <div class="cyber-card p-4 p-md-5">
+          <p class="lead">Soy <strong>Emilio José Suero Castillo</strong>, estudiante de Ingeniería en Sistemas. Me interesan el desarrollo web, las redes informáticas y la tecnología.</p>
+          <p class="muted-text">Mi objetivo es continuar desarrollando mis habilidades técnicas y crear soluciones digitales modernas, accesibles y útiles. Este portafolio reúne ejemplos de proyectos y áreas de interés profesional.</p>
+          <div class="row g-4 mt-2 text-center">
+            <div class="col-md-4"><i class="bi bi-mortarboard-fill skill-icon"></i><h5>Formación</h5><p class="muted-text">Ingeniería en Sistemas</p></div>
+            <div class="col-md-4"><i class="bi bi-router-fill skill-icon"></i><h5>Redes</h5><p class="muted-text">Soporte e infraestructura</p></div>
+            <div class="col-md-4"><i class="bi bi-window-stack skill-icon"></i><h5>Desarrollo</h5><p class="muted-text">Tecnologías web</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">// STACK TECNOLÓGICO</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-filetype-html skill-icon"></i><h4>HTML5</h4><p>Web semántica</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-filetype-css skill-icon"></i><h4>CSS3</h4><p>Diseño responsive</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-filetype-js skill-icon"></i><h4>JavaScript</h4><p>Interactividad</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-bootstrap-fill skill-icon"></i><h4>Bootstrap</h4><p>Diseño adaptable</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-github skill-icon"></i><h4>GitHub</h4><p>Repositorios</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-router-fill skill-icon"></i><h4>Redes</h4><p>Networking</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-database-fill skill-icon"></i><h4>SQL</h4><p>Bases de datos</p></div></div>
+          <div class="col-6 col-md-4 col-lg-3"><div class="cyber-card skill-card"><i class="bi bi-shield-lock-fill skill-icon"></i><h4>Seguridad</h4><p>Fundamentos</p></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">// PROYECTOS</h2>
+        <div class="filter-buttons" role="group" aria-label="Filtrar proyectos">
+          <button class="filter-btn active" type="button" data-filter="all">Todos</button>
+          <button class="filter-btn" type="button" data-filter="web">Web</button>
+          <button class="filter-btn" type="button" data-filter="app">App</button>
+          <button class="filter-btn" type="button" data-filter="design">Diseño</button>
+        </div>
+        <div class="row g-4" id="projectContainer">
+          <div class="col-md-6 col-lg-4 project-item" data-category="web"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-globe2"></i></div><div class="project-content"><h4>Portafolio Cyberpunk</h4><p>Portafolio con fondo Matrix y tema dinámico.</p><span class="badge-cyber">HTML</span><span class="badge-cyber">CSS</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="web"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-building"></i></div><div class="project-content"><h4>TechSolutions</h4><p>Sitio web de ejemplo para servicios tecnológicos.</p><span class="badge-cyber">Web</span><span class="badge-cyber">Bootstrap</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="app"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-person-lock"></i></div><div class="project-content"><h4>Sistema Login</h4><p>Interfaz de inicio de sesión y registro.</p><span class="badge-cyber">App</span><span class="badge-cyber">JS</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="app"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-phone"></i></div><div class="project-content"><h4>App de Servicios</h4><p>Concepto de aplicación para gestionar solicitudes.</p><span class="badge-cyber">App</span><span class="badge-cyber">UX</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="design"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-palette"></i></div><div class="project-content"><h4>Identidad Cyberpunk</h4><p>Concepto visual para una marca tecnológica.</p><span class="badge-cyber">Diseño</span><span class="badge-cyber">UI</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="web"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-router"></i></div><div class="project-content"><h4>Red Empresarial</h4><p>Propuesta de infraestructura y organización de red.</p><span class="badge-cyber">Redes</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="design"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-phone-fill"></i></div><div class="project-content"><h4>Diseño Mobile</h4><p>Propuesta visual para dispositivos móviles.</p><span class="badge-cyber">Diseño</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="app"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-bar-chart"></i></div><div class="project-content"><h4>Dashboard</h4><p>Panel de ejemplo para mostrar estadísticas.</p><span class="badge-cyber">App</span><span class="badge-cyber">JS</span></div></article></div>
+          <div class="col-md-6 col-lg-4 project-item" data-category="web"><article class="cyber-card project-card"><div class="project-img"><i class="bi bi-cpu"></i></div><div class="project-content"><h4>IA Web</h4><p>Concepto de página informativa sobre inteligencia artificial.</p><span class="badge-cyber">IA</span><span class="badge-cyber">Web</span></div></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">// EXPERIENCIA LABORAL</h2>
+        <div class="row g-4 justify-content-center">
+          <div class="col-md-6 col-lg-4"><article class="cyber-card timeline-card"><i class="bi bi-router skill-icon"></i><h4>Soporte Técnico</h4><p class="company">CESEP</p><p class="muted-text">Soporte técnico, cableado UTP y configuración de routers y switches.</p><p class="muted-text">Redes · Soporte · Infraestructura</p></article></div>
+          <div class="col-md-6 col-lg-4"><article class="cyber-card timeline-card"><i class="bi bi-cash-register skill-icon"></i><h4>Cajero y Servicio al Cliente</h4><p class="company">Gomera La Solución</p><p class="muted-text">Atención al cliente, manejo de caja y apoyo en operaciones comerciales.</p><small>2022–2023</small></article></div>
+          <div class="col-md-6 col-lg-4"><article class="cyber-card timeline-card"><i class="bi bi-shop skill-icon"></i><h4>Encargado de Ventas</h4><p class="company">Vaper Point</p><p class="muted-text">Gestión de ventas, atención al cliente y apoyo en operaciones del negocio.</p><small>2023–2026</small></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="videos" class="section">
+      <div class="container">
+        <h2 class="section-title">// VIDEOS DESTACADOS</h2>
+        <div class="row g-4">
+          <div class="col-md-6 col-lg-4"><div class="cyber-card p-3"><div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/UB1O30fR-EE" title="Tutorial de desarrollo web" loading="lazy" allowfullscreen></iframe></div><h5 class="mt-3">Desarrollo Web</h5></div></div>
+          <div class="col-md-6 col-lg-4"><div class="cyber-card p-3"><div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/hdI2bqOjy3c" title="Tutorial de JavaScript" loading="lazy" allowfullscreen></iframe></div><h5 class="mt-3">JavaScript</h5></div></div>
+          <div class="col-md-6 col-lg-4"><div class="cyber-card p-3"><div class="video-container"><iframe src="https://www.youtube-nocookie.com/embed/kUMe1FH4CHE" title="Tutorial de HTML" loading="lazy" allowfullscreen></iframe></div><h5 class="mt-3">HTML y programación</h5></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container">
+        <h2 class="section-title">// CONTACTO</h2>
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="cyber-card p-4 p-md-5">
+              <form id="contactForm">
+                <div class="mb-3"><label for="name" class="form-label">Nombre</label><input id="name" name="name" class="form-control" type="text" autocomplete="name" required placeholder="Tu nombre"></div>
+                <div class="mb-3"><label for="email" class="form-label">Correo electrónico</label><input id="email" name="email" class="form-control" type="email" autocomplete="email" required placeholder="correo@ejemplo.com"></div>
+                <div class="mb-3"><label for="message" class="form-label">Mensaje</label><textarea id="message" name="message" class="form-control" rows="5" required placeholder="Escribe tu mensaje"></textarea></div>
+                <button class="cyber-btn" type="submit"><i class="bi bi-send"></i> Enviar mensaje</button>
+                <p id="formMessage" class="mt-3" role="status" aria-live="polite"></p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <h4 class="footer-brand">EMILIO.DEV</h4>
+      <p class="muted-text">Portafolio profesional Cyberpunk</p>
+      <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="GitHub"><i class="bi bi-github"></i></a>
+      <a href="mailto:tuemail@gmail.com" class="social-link" aria-label="Correo"><i class="bi bi-envelope-fill"></i></a>
+      <p class="mt-3 mb-0">© 2026 Emilio Suero · Licencia MIT</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
